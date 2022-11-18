@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+        <div class="container">
+            <div class="settings">
+                <div class="settingContainer">
+                    <div>Resolution</div>
+                    <input type="range" id="resolution" name="resolution"
+                    min="1" max="100" value="60">
+                    <div id="showPixels"></div>
+                </div>
+                
+                <div class="settingContainer">
+                    <div class="forBottomMargin">Color</div>
+                    <input type="color" id="colorSelector" value="#000000">
+                </div>
+               
+                <div class="settingContainer">
+                    <div>Opacity</div>
+                    <input type="range" id="opacitySelector" name="opacitySelector"
+                    min="1" max="100" value="80">
+                </div>
+
+                <button id="brushBtn" class="settingContainer activeBtn">Brush</button>
+                <button id="eraserBtn" class="settingContainer">Eraser</button>
+                <button id="clearBtn" class="settingContainer">Clear</button>
+                
+            </div>
+            <div class="title">
+                <div>Etch-A-Sketch</div>
+            </div>
+            <div class="mainContainer" id="mainContainer"></div>
+            <div class="footer">
+                <div>An Alexander Brik Production</div>
+            </div>
+        </div>
+</body>
+</html>
